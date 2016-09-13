@@ -2,6 +2,8 @@ name: dataproducts
 account: cwongg
 server: shinyapps.io
 appId: 125155
-bundleId: 554829
+bundleId: 555921
 url: https://cwongg.shinyapps.io/dataproducts/
-when: 1473635338.38096
+when: 1473727622.44403
+asMultiple: FALSE
+asStatic: FALSE

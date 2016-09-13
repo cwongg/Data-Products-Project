@@ -11,7 +11,8 @@ shinyUI(
       numericInput('mother_num', "Mother's height (inches)", 64, min = 20, max = 100, step = 1),
       radioButtons("gender_cbx", "Expected child's gender",
                          c("Male" = "male",
-                           "Female" = "female"))
+                           "Female" = "female")),
+      p("Instructions: Please enter the father's height in inches, the mother's height in inches and the expected child's gender.  The predicted child's height will be displayed on the right", style = "color:blue")
     ),
     mainPanel(
         h3('You entered'),
@@ -22,7 +23,7 @@ shinyUI(
         h4("Expected child's gender"),
         verbatimTextOutput("gender_o"),
         h3('Result of prediction'),
-        h4("Predicted child's height"),
+        h4("Predicted child's height (inches)"),
         verbatimTextOutput("height_o")
     )
   )
